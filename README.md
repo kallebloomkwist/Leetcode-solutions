@@ -1,2 +1,2 @@
 # Leetcode-solutions
-Все решенные мной на Python задачи с Leetcode
+Все решенные мной задачи с Leetcode
