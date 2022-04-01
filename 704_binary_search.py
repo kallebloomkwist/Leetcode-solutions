@@ -1,16 +1,23 @@
-# This is a sample Python script.
+class Solution(object):
+    def search(self, nums, target):
+        '''
+        Binary search realization
+        Time complexity: O(log n)
+        Space complexity: O(1)
+        :param nums: array of integers, sorted in ascending order
+        :param target: integer
+        :return: index of target, if it exists in nums; -1 otherwise
+        '''
+        left, right = 0, len(nums) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if target == nums[mid]:
+                return mid
+            elif target < nums[mid]:
+                right = mid - 1
+            else:
+                left = mid + 1
+        return -1
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
