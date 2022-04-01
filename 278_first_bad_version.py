@@ -7,6 +7,8 @@ class Solution:
     def firstBadVersion(self, n):
         '''
         Finds first bad version in release sequence from 1 to n
+        Time complexity: O(log n)
+        Space complexity: O(1)
         :param n: number of versions
         :return: bad, number of the first bad version
         '''
